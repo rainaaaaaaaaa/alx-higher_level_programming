@@ -1,8 +1,8 @@
 #!/usr/bin/python3
+from calculator_1 import add, subtract, multiply, divide
+
 a = 10
 b = 5
-
-from calculator_1 import add, subtract, multiply, divide
 
 result_add = add(a, b)
 result_subtract = subtract(a, b)
