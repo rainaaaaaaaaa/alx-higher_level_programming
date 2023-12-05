@@ -7,6 +7,7 @@ Functions and Classes:
 
 
 def load_from_json_file(filename):
+    """create an object from a JSON file"""
     from json import load
     with open(filename, "r", encoding="UTF-8") as f:
         obj = load(f)

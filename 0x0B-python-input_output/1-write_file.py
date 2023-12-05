@@ -7,6 +7,9 @@ Functions and Classes:
 
 
 def write_file(filename="", text=""):
+    """
+    write string to a file and return number of characters written
+    """
     with open(filename, "w", encoding="UTF-8") as f:
         nc = f.write(text)
 

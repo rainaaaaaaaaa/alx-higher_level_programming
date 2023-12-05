@@ -7,5 +7,6 @@ Functions and Classes:
 
 
 def from_json_string(my_str):
+    """return a Python object represented by JSON stirng"""
     from json import loads
     return loads(my_str)
