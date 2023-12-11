@@ -10,4 +10,4 @@ if __name__ == '__main__':
     else:
         print("s:")
     for j in range(1, i):
-        print("{j}: {argv[j]}")
+        print(f"{j}: {argv[j]}")
