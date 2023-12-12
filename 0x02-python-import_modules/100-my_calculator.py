@@ -8,17 +8,6 @@ if __name__ == "__main__":
     a = int(argv[1])
     b = int(argv[3])
     operator = argv[2]
-    """
-    operator_functions = {
-    '+': add,
-    '-': sub,
-    '*': mul,
-    '/': div
-    }
-    if operator in operator_functions:
-        result = operator_functions[operator](a, b)
-        print(f"{a} {operator} {b} = {result}")
-    """
     if operator == '+':
         print(f"{a} + {b} = {add(a, b)}")
     elif operator == '-':
@@ -26,6 +15,9 @@ if __name__ == "__main__":
     elif operator == '*':
         print(f"{a} * {b} = {mul(a, b)}")
     elif operator == '/':
+        if b == 0:
+            print("Error: Division by zero is not allowed.")
+            exit(1)
         print(f"{a} / {b} = {div(a, b)}")
     else:
         print("Unknown operator. Available operators: +, -, * and /", end="")
