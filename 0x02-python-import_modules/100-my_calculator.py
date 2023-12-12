@@ -26,9 +26,6 @@ if __name__ == "__main__":
     elif operator == '*':
         print(f"{a} * {b} = {mul(a, b)}")
     elif operator == '/':
-        if b == 0:
-            print("Error: Division by zero is not allowed.")
-            exit(1)
         print(f"{a} / {b} = {div(a, b)}")
     else:
         print("Unknown operator. Available operators: +, -, * and /", end="")
